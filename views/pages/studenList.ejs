@@ -1,0 +1,27 @@
+Studentlist
+<hr>
+
+<style>
+	div.table {
+		border: 1px solid black;
+	}
+	div.studentRow {
+		background: yellow;
+		margin-bottom: 15px;
+		}
+
+</style>
+
+<div class="table">
+
+<% inputStudentArray.forEach(function(element,index) { %>
+
+	<div class="studentRow">
+		<span><%=element.id%></span>
+		<span><%=element.firstname%></span>
+		<span><%=element.lastname%></span>
+	</div>
+
+<% }) %>
+
+</div>
